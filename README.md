@@ -6,7 +6,7 @@ Calculates the best soccer tips based on latest betting odds.
 * [BeautifulSoup 4](https://pypi.python.org/pypi/beautifulsoup4/) (needed for parsing HTML)
 
 ## Precaution
-This tool currently only works with the following rules:
+This tool currently only works with the following [kicktipp.de](https://www.kicktipp.de/) rules:
 
 |      | Tendency | Goal Difference | Exact Result |
 | ---- | -------: | --------------: | -----------: |
