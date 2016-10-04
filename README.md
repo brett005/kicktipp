@@ -1,14 +1,14 @@
 # kicktipp
-Calculates the best soccer tips based on oddschecker.com.
+Calculates the best soccer tips based on latest betting odds.
 
 ## Dependencies
 * Python 3.x
 * [BeautifulSoup 4](https://pypi.python.org/pypi/beautifulsoup4/) (needed for parsing HTML)
 
 ## Precaution
-This tool currently only works with the following points scheme:
-|------| Tendency | Goal difference | Exact Result |
-|------|---------:|----------------:|-------------:|
+This tool currently only works with the following rules:
+
+|      | Tendency | Goal Difference | Exact Result |
 | Win  | 2        | 3               | 4            |
 | Draw | 2        | -               | 4            |
 
