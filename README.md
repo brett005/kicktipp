@@ -9,6 +9,7 @@ Calculates the best soccer tips based on latest betting odds.
 This tool currently only works with the following rules:
 
 |      | Tendency | Goal Difference | Exact Result |
+| ---- | -------: | --------------: | -----------: |
 | Win  | 2        | 3               | 4            |
 | Draw | 2        | -               | 4            |
 
