@@ -7,7 +7,6 @@ ODDS_BASE_URL = "http://www.oddschecker.com/"
 def load_page(url):
     return urllib.request.urlopen("{}{}".format(ODDS_BASE_URL, url)).read().decode()
 
-# Stolen from Wikibooks or so
 def levenshtein(s1, s2):
     if len(s1) < len(s2):
         return levenshtein(s2, s1)
