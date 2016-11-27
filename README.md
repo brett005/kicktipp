@@ -1,5 +1,5 @@
 # kicktipp
-Calculates the best soccer tips based on latest betting odds.
+Calculates the best soccer for **1. Bundesliga** tips based on latest betting odds.
 
 ## Dependencies
 * Python 3.x
