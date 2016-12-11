@@ -19,7 +19,7 @@ def run_app():
         team0_name = match['teams'][0]
         team0_name = " "*(37-len(team0_name)) + team0_name
 
-        score_right, score_left = best_tipps[0][0][0], best_tipps[0][0][1]
+        score_left, score_right = best_tipps[0][0][0], best_tipps[0][0][1]
         if best_tipps[0][0][0] >= 4 and best_tipps[0][0][1] >= 4:
             score_left = "-"
             score_right = "-"
