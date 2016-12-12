@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import oddschecker
+import oddschecker, sys
 
 class bcolor:
     TEAM1 = '\033[92m'
@@ -8,6 +8,11 @@ class bcolor:
     ENDC  = '\033[0m'
 
 def run_app():
+    color_team1, color_team2, color_endc = bcolor.TEAM1, bcolor.TEAM2, bcolor.ENDC
+    if "--no-color" in sys.argv:
+        color_team1 = ""
+        color_team2 = ""
+        color_endc = ""
     print("kicktipp oddschecker")
     odds = oddschecker.Odds()
     matches = odds.get_matches()
@@ -23,7 +28,7 @@ def run_app():
         if best_tipps[0][0][0] >= 4 and best_tipps[0][0][1] >= 4:
             score_left = "-"
             score_right = "-"
-        print("{}{}{} {}:{} {}{}{}".format(bcolor.TEAM1, team0_name, bcolor.ENDC, score_left, score_right, bcolor.TEAM2, match['teams'][1], bcolor.ENDC))
+        print("{}{}{} {}:{} {}{}{}".format(color_team1, team0_name, color_endc, score_left, score_right, color_team2, match['teams'][1], color_endc))
     print(" "*36 + "--------")
     print(" "*17 + "Expected Point Gain: +" + str(total_points))
 
