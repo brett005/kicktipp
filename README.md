@@ -1,6 +1,12 @@
 # kicktipp
 Calculates the best soccer for **1. Bundesliga** tips based on odds from bwin.com.
 
+## News
+* Version 18.08. It is much faster than the old version and contains minor bugfixes.
+* Version 18.09. Friendly user interface.
+
+![Demo of version 18.09](https://i.imgur.com/tLyAw2s.png)
+
 ## Dependencies
 * Python 3.x
 * [BeautifulSoup 4](https://pypi.python.org/pypi/beautifulsoup4/) (required for parsing HTML)
