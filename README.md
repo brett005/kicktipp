@@ -25,7 +25,7 @@ This tool only works with the following [kicktipp.de](https://www.kicktipp.de/) 
 * Version 18.09. Friendly user interface.
 
 ## Contributing
-Feel free to send be your pull requests ;)
+Feel free to send me your pull requests ;)
 
 ## Todo
 * Code cleanup
