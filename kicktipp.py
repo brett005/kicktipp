@@ -104,18 +104,25 @@ def get_best_tips(match_data):
     best_tips = numpy.argsort(arr).tolist()[::-1]
     for i in range(0, len(best_tips)):
         best_tips[i] = numpy.unravel_index(best_tips[i], exp_rewards.shape)
-    return best_tips
+    return (best_tips, exp_rewards.item(best_tips[0]))
 
 print("kick-predict 18.08")
 
-print("[1] Liste der Spiele abfragen.")
+print("[1] Getting list of upcoming matches.")
 
 main_page = load_soup("https://sports.bwin.com/de/sports/4/43/wetten/bundesliga")
 match_urls = get_matches(main_page)
 
-print("[2] Daten zu den Spielen abrufen.")
+print("[2] Scraping data...")
 match_data = get_match_data(match_urls)
 print()
+
+print("{}\033[1mBest tip\t2nd tip\tExp. reward\033[0m".format(" "*50))
+print()
+
+total_reward = 0
 for match in match_data:
-    print("{}{}{}\t{}".format(match["match_name"], " "*(max(0, 50-len(match["match_name"]))), match["best_tips"][0], match["best_tips"][1]))
-    print()
+    exp_reward = match["best_tips"][1]
+    total_reward = total_reward + exp_reward
+    print("{}{}{}\t{}\t{:1.3f}".format(match["match_name"], " "*(max(0, 50-len(match["match_name"]))), match["best_tips"][0][0], match["best_tips"][0][1], exp_reward))
+print("{}\t\t\033[1mTotal: {:2.3f}\033[0m".format(" "*50, total_reward))

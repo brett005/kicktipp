@@ -15,4 +15,6 @@ This tool only works with the following [kicktipp.de](https://www.kicktipp.de/) 
 | Draw | 2        | -               | 4            |
 
 ## News
-* Version 18.08 is out. It is much faster than the old version and contains a minor bugfix.
+* Version 18.08. It is much faster than the old version and contains minor bugfixes.
+* Version 18.09. Friendly user interface.
+
