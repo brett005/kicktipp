@@ -106,7 +106,7 @@ def get_best_tips(match_data):
         best_tips[i] = numpy.unravel_index(best_tips[i], exp_rewards.shape)
     return (best_tips, exp_rewards.item(best_tips[0]))
 
-print("kick-predict 18.08")
+print("kick-predict 18.09")
 
 print("[1] Getting list of upcoming matches.")
 
