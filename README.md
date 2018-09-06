@@ -24,3 +24,13 @@ This tool only works with the following [kicktipp.de](https://www.kicktipp.de/) 
 * Version 18.08. It is much faster than the old version and contains minor bugfixes.
 * Version 18.09. Friendly user interface.
 
+## Contributing
+Feel free to send be your pull requests ;)
+
+## Todo
+* Code cleanup
+* Add comments to code
+* Add additional bookmakers
+
+## Contact
+* Contact me on Telegram: http://t.me/oompf
