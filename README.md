@@ -1,5 +1,5 @@
 # kicktipp
-Calculates the best soccer for **1. Bundesliga** tips based on odds from bwin.com.
+Calculates the best soccer tips for **1. Bundesliga** based on odds from bwin.com.
 
 ## News
 * Version 18.08. It is much faster than the old version and contains minor bugfixes.
