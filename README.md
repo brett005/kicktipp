@@ -34,3 +34,7 @@ Feel free to send me your pull requests ;)
 
 ## Contact
 * Contact me on Telegram: http://t.me/oompf
+
+## See also
+
+For an improved version, you can look [here](https://oompf.de/bundesliga-vorhersagen/) (german).
